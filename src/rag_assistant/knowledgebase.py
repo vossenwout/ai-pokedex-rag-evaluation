@@ -55,7 +55,7 @@ class MilvusKnowledgeBase:
             )
             return result.embeddings[0].values
         except Exception as e:
-            raise KBEmbeddingError(f"Failed to embed content: {e}")
+            raise KBEmbeddingError(f"Failed to embed content: {e}") from e
 
     def hybrid_search(self, query: str) -> list[PokedexSearchResult]:
         ranker = WeightedRanker(0.5, 0.5)
@@ -81,7 +81,7 @@ class MilvusKnowledgeBase:
                 output_fields=["metadata", "text"],
             )
         except Exception as e:
-            raise KBSearchError(f"Failed to search knowledge base: {e}")
+            raise KBSearchError(f"Failed to search knowledge base: {e}") from e
 
         try:
             return [
@@ -95,4 +95,4 @@ class MilvusKnowledgeBase:
                 for result in results[0]
             ]
         except Exception as e:
-            raise KBSearchError(f"Error while parsing search results: {e}")
+            raise KBSearchError(f"Error while parsing search results: {e}") from e

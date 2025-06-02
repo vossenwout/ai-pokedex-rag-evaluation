@@ -87,23 +87,22 @@ class Evaluator:
                 answer=answered_qa.answer,
                 ground_truth=answered_qa.ground_truth,
             )
-        elif metric == Metric.FAITHFULNESS:
+        if metric == Metric.FAITHFULNESS:
             return FAITHFULNESS.prompt.format(
                 context=answered_qa.retrieved_knowledge,
                 answer=answered_qa.answer,
                 question=answered_qa.question,
             )
-        elif metric == Metric.CONTEXT_RELEVANCE:
+        if metric == Metric.CONTEXT_RELEVANCE:
             return CONTEXT_RELEVANCE.prompt.format(
                 question=answered_qa.question,
                 context=answered_qa.retrieved_knowledge,
             )
-        elif metric == Metric.HELPFULNESS:
+        if metric == Metric.HELPFULNESS:
             return HELPFULNESS.prompt.format(
                 question=answered_qa.question, answer=answered_qa.answer
             )
-        else:
-            raise ValueError(f"Metric {metric} is not supported.")
+        raise ValueError(f"Metric {metric} is not supported.")
 
     @retry(
         stop=stop_after_attempt(5),

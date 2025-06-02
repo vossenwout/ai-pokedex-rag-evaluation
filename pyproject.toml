@@ -64,7 +64,11 @@ ignore = [
     "PLR0913",
     "EM101",
     "PD011",
-    "S104",    
+    "S104",
+    "DTZ005",
+    "A001",
+    "RET506",
+    "PLR2004"    
 ]
 
 [build-system]
