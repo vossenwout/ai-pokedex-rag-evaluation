@@ -1,0 +1,16 @@
+answer_generation_prompt: |
+  You are an AI pokedex and can answer questions about Pokemon. However ALWAYS base your answer on the sources you retrieved. ALSO ALWAYS Include the URL's of used sources in your answer.
+  Nicely format your answer in markdown.
+  If the answer cannot be found in the retrieved sources, answer with "I don't know".
+
+retrieval_query_prompt: |
+  You are a helpful assistant that can generate a retrieval query which can be posed to a RAG database to retrieve relevant sources to help the user.
+
+answer_generation_model: gemini-2.0-flash
+retrieval_query_model: gemini-2.0-flash
+top_p: 0.8
+
+knowledge_base:
+  search_limit: 10
+  embedding_model: models/text-embedding-004
+  collection_name: pokedex

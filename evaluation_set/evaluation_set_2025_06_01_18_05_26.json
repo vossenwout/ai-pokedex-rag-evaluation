@@ -1,0 +1,16 @@
+{
+    "metadata": {
+        "model": "gemini-2.0-flash",
+        "num_questions": 10,
+        "timestamp": "2025_06_01_18_05_26"
+    },
+    "qa_pairs": [
+        {
+            "question": "What is Sinistcha's National Pokédex number?",
+            "ground_truth": "1013",
+            "sources": [
+                "https://pokemondb.net/pokedex/sinistcha"
+            ]
+        }
+    ]
+}

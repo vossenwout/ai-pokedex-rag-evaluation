@@ -1,0 +1,72 @@
+[project]
+name = "pokedex-rag-evaluation"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "WoutVossen",email = "vossen.w@hotmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "google-genai (>=1.17.0,<2.0.0)",
+    "tenacity (>=9.1.2,<10.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "pyyaml (>=6.0.2,<7.0.0)",
+    "tqdm (>=4.67.1,<5.0.0)",
+    "pymilvus (>=2.5.10,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "pokedex_rag_evaluation", from = "src"}]
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.2.0"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+select = [
+    "ALL"
+]
+ignore = [
+    "ANN", 
+    "COM",
+    "C90", 
+    "DJ",  
+    "EXE", 
+    "T10", 
+    "TID", 
+    "D100",  
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D106",
+    "D107",
+    "D200",
+    "D205",
+    "D212",
+    "D400",
+    "D401",
+    "D415",
+    "E402",  
+    "E501",  
+    "TRY003", 
+    "G004",
+    "PTH123",
+    "INP001",
+    "TRY400",
+    "EM102",
+    "B008",
+    "BLE001",
+    "D203",
+    "PLR0913",
+    "EM101",
+    "PD011",
+    "S104",    
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
