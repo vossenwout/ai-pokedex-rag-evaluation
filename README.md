@@ -8,10 +8,10 @@ This project contains a framework to evaluate our AI Pokedex Assistant. It conta
 
 These are the repos that are used to create and run the AI Pokedex.
 
-- [Knowledgebase and Scraper](https://github.com/vossenwout/pokedex-scraper)
-- [Assistant API](https://github.com/vossenwout/pokedex-rag-api)
-- [Frontend](https://github.com/vossenwout/pokedex-frontend)
-- [Evaluation Framework](https://github.com/vossenwout/pokedex-rag-evaluation)
+- [Knowledgebase and Scraper](https://github.com/vossenwout/ai-pokedex-scraper)
+- [Assistant API](https://github.com/vossenwout/ai-pokedex-assistant-api)
+- [Frontend](https://github.com/vossenwout/ai-pokedex-frontend)
+- [Evaluation Framework](https://github.com/vossenwout/ai-pokedex-rag-evaluation)
 
 I created a youtube video where I explain the project: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
@@ -35,7 +35,7 @@ Before you begin, ensure you have the following installed:
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/vossenwout/pokedex-rag-evaluation
+    git clone https://github.com/vossenwout/ai-pokedex-rag-evaluation
     cd pokedex-rag-evaluation
     ```
 
@@ -67,7 +67,7 @@ This env file should contain the env vars of `config/.env.example`.
 By leveraging Gemini models we can generate evaluation sets based on the data we scraped.
 
 1. **Eveluation set generation**:
-   Create a `raw/` folder in which you manually copy the raw data scraped by the [Scraper](https://github.com/vossenwout/pokedex-scraper).
+   Create a `raw/` folder in which you manually copy the raw data scraped by the [Scraper](https://github.com/vossenwout/ai-pokedex-scraper).
 
 2. **Run the evaluation set generation script:**
 
@@ -108,4 +108,4 @@ After generating evaluation sets you can evaluate the assistant by running the f
 - `src/pokedex_rag_evaluation/generate_evaluation_set.py`: Contains the script to generate evaluation sets.
 - `src/pokedex_rag_evaluation/__main__.py`: Contains the script to evaluate the assistant.
 - `src/pokedex_rag_evaluation/metrics.py`: Contains the implemented GenAI metrics to evaluate the assistant.
-- `src/rag_assistant`: A copy of our pokedex assistant used for evaluation. Also found in the [Assistant API](https://github.com/vossenwout/pokedex-rag-api) repo.
+- `src/rag_assistant`: A copy of our pokedex assistant used for evaluation. Also found in the [Assistant API](https://github.com/vossenwout/ai-pokedex-assistant-api) repo.
