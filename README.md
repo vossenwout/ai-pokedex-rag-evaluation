@@ -108,3 +108,4 @@ After generating evaluation sets you can evaluate the assistant by running the f
 - `src/pokedex_rag_evaluation/generate_evaluation_set.py`: Contains the script to generate evaluation sets.
 - `src/pokedex_rag_evaluation/__main__.py`: Contains the script to evaluate the assistant.
 - `src/pokedex_rag_evaluation/metrics.py`: Contains the implemented GenAI metrics to evaluate the assistant.
+- `src/rag_assistant`: A copy of our pokedex assistant used for evaluation. Also found in the [Assistant API](https://github.com/vossenwout/pokedex-rag-api) repo.
