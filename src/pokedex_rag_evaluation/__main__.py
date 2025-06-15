@@ -13,7 +13,7 @@ if __name__ == "__main__":
     )
     answered_evaluation_set = answer_generator.complete_evaluation_set(
         evaluation_set_path=Path(
-            "evaluation_set/evaluation_set_2025_06_01_18_05_26.json"
+            "evaluation_set/evaluation_set_2025_06_14_11_57_23.json"
         )
     )
     evaluator = Evaluator(

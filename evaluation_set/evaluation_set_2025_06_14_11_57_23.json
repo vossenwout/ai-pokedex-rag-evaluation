@@ -1,0 +1,79 @@
+{
+    "metadata": {
+        "model": "gemini-2.0-flash-lite",
+        "num_questions": 10,
+        "timestamp": "2025_06_14_11_57_23"
+    },
+    "qa_pairs": [
+        {
+            "question": "What is Joltik's species?",
+            "ground_truth": "Attaching Pokémon",
+            "sources": [
+                "https://pokemondb.net/pokedex/joltik"
+            ]
+        },
+        {
+            "question": "What is the base stat total of Dragonair?",
+            "ground_truth": "420",
+            "sources": [
+                "https://pokemondb.net/pokedex/dragonair"
+            ]
+        },
+        {
+            "question": "What is Pichu's species?",
+            "ground_truth": "Tiny Mouse Pokémon",
+            "sources": [
+                "https://pokemondb.net/pokedex/pichu"
+            ]
+        },
+        {
+            "question": "At what level does Fletchling evolve into Fletchinder?",
+            "ground_truth": "Fletchling evolves into Fletchinder at level 17.",
+            "sources": [
+                "https://pokemondb.net/pokedex/fletchling"
+            ]
+        },
+        {
+            "question": "What is Skrelp's type?",
+            "ground_truth": "Skrelp is a Poison/Water type Pokémon.",
+            "sources": [
+                "https://pokemondb.net/pokedex/skrelp"
+            ]
+        },
+        {
+            "question": "What is Alcremie's species?",
+            "ground_truth": "Cream Pokémon",
+            "sources": [
+                "https://pokemondb.net/pokedex/alcremie"
+            ]
+        },
+        {
+            "question": "What are the two forms of Gimmighoul?",
+            "ground_truth": "Gimmighoul has two forms: Chest Form and Roaming Form.",
+            "sources": [
+                "https://pokemondb.net/pokedex/gimmighoul"
+            ]
+        },
+        {
+            "question": "What is the base stat total of Morgrem?",
+            "ground_truth": "Morgrem's base stat total is 370.",
+            "sources": [
+                "https://pokemondb.net/pokedex/morgrem"
+            ]
+        },
+        {
+            "question": "What is the base Friendship value of Basculin in Generations 5-7?",
+            "ground_truth": "In Generations 5-7, Basculin (Red-Striped Form) and Basculin (Blue-Striped Form) have a base Friendship value of 70.",
+            "sources": [
+                "https://pokemondb.net/pokedex/basculin"
+            ]
+        },
+        {
+            "question": "What is the National Pok\tmon number of Scizor?",
+            "ground_truth": "0212",
+            "sources": [
+                "https://pokemondb.net/pokedex/scizor"
+            ]
+        }
+    ]
+}

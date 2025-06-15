@@ -157,8 +157,8 @@ if __name__ == "__main__":
     init_config()
     generate_evaluation_set(
         num_questions=10,
-        model_name="gemini-2.0-flash",
-        knowledge_dir=Path("raw_data"),
+        model_name="gemini-2.0-flash-lite",
+        knowledge_dir=Path("raw"),
         output_dir=Path("evaluation_set"),
         # don't set threads to high if you run into rate limits
         threads=2,
